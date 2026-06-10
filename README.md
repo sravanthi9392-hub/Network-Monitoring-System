@@ -57,14 +57,14 @@ Network-Monitoring-System/
 
 ### Analysis Results
 
-#### **Test Case 1**
+#### **Example1**
 
 <img width="500" height="300" alt="Test Case 1" src="https://github.com/user-attachments/assets/efc4efbc-6ad4-4ce6-ae1f-6f45987ca469" />
 
-#### **Test Case**
+#### **Example2**
 
 <img width="500" height="300" alt="Test Case 2" src="https://github.com/user-attachments/assets/891ddf47-f3a6-45b9-b17f-4ee0cf8ef148" />
 
-#### **Test Case 3**
+#### **Example3**
 
 <img width="500" height="300" alt="Test Case 3" src="https://github.com/user-attachments/assets/484971f0-6198-43b6-add6-294b75b6802c" />
