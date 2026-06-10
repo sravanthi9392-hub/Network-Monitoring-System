@@ -2,6 +2,10 @@
 
 A web-based network monitoring application developed using Python, Flask, and Socket Programming. The application allows users to analyze websites or IP addresses by checking host availability and scanning common network service ports.
 
+## 🌐 Live Demo
+
+https://network-monitoring-system-zgp8.onrender.com
+
 ## Features
 
 - DNS Lookup (Hostname to IP Address Resolution)
