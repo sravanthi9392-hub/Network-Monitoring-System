@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Network Monitoring System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌐 Smart Network Monitoring System</h1>
+
+    <form method="POST">
+
+        <input type="text"
+               name="host"
+               placeholder="Enter Website or IP Address"
+               required>
+
+        <button type="submit">
+            Analyze
+        </button>
+
+    </form>
+
+    {% if result %}
+
+        {% if result.error %}
+
+            <div class="card">
+
+                <h2 class="error">
+                    {{ result.error }}
+                </h2>
+
+            </div>
+
+        {% else %}
+
+            <!-- Network Information -->
+
+            <div class="card">
+
+                <h2>📡 Network Information</h2>
+
+                <p>
+                    <strong>Hostname:</strong>
+                    {{ result.host }}
+                </p>
+
+                <p>
+                    <strong>IP Address:</strong>
+                    {{ result.ip }}
+                </p>
+
+                <p>
+                    <strong>Status:</strong>
+
+                    {% if result.status == "Online" %}
+                        <span style="color:green;">
+                            🟢 Online
+                        </span>
+                    {% else %}
+                        <span style="color:red;">
+                            🔴 Offline
+                        </span>
+                    {% endif %}
+
+                </p>
+
+            </div>
+
+            <!-- Port Scan Results -->
+
+            <div class="card">
+
+                <h2>🔍 Port Scan Results</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Port</th>
+                        <th>Service</th>
+                        <th>Status</th>
+                    </tr>
+
+                    {% for port, service, status in result.ports %}
+
+                    <tr>
+
+                        <td>{{ port }}</td>
+
+                        <td>{{ service }}</td>
+
+                        <td>
+
+                            {% if status == "Open" %}
+                                <span style="color:green;">
+                                    ✅ Open
+                                </span>
+                            {% else %}
+                                <span style="color:red;">
+                                    ❌ Closed
+                                </span>
+                            {% endif %}
+
+                        </td>
+
+                    </tr>
+
+                    {% endfor %}
+
+                </table>
+
+            </div>
+
+        {% endif %}
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
