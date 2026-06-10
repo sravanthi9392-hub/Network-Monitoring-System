@@ -48,3 +48,23 @@ Network-Monitoring-System/
 - Scans Common Network Ports
 - Displays Service Names for Each Port
 - Identifies Whether Ports are Open or Closed
+
+## 📸 Screenshots
+
+### Home Page
+
+<img width="500" height="300" alt="Home Page" src="https://github.com/user-attachments/assets/b3fdd639-7b56-4431-919c-bfc5f188c155" />
+
+### Analysis Results
+
+#### **Test Case 1**
+
+<img width="500" height="300" alt="Test Case 1" src="https://github.com/user-attachments/assets/efc4efbc-6ad4-4ce6-ae1f-6f45987ca469" />
+
+#### **Test Case**
+
+<img width="500" height="300" alt="Test Case 2" src="https://github.com/user-attachments/assets/891ddf47-f3a6-45b9-b17f-4ee0cf8ef148" />
+
+#### **Test Case 3**
+
+<img width="500" height="300" alt="Test Case 3" src="https://github.com/user-attachments/assets/484971f0-6198-43b6-add6-294b75b6802c" />
